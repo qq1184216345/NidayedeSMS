@@ -3,7 +3,9 @@
  * 用于后台监听新短信并自动调用API
  */
 
-const API_URL = 'https://open.feishu.cn/open-apis/bot/v2/hook/780dc553-d26d-4744-a39b-f995c46fcc39'
+// 飞书自定义机器人 webhook 地址，请替换为你自己的：
+// 飞书群 -> 设置 -> 群机器人 -> 添加机器人 -> 自定义机器人 -> 复制 Webhook 地址
+const API_URL = 'https://open.feishu.cn/open-apis/bot/v2/hook/YOUR_WEBHOOK_KEY_HERE'
 const CHECK_INTERVAL = 5000 // 检查间隔：5秒
 const STORAGE_KEY = 'sms_processed_ids'
 const LOG_STORAGE_KEY = 'sms_monitor_logs'
